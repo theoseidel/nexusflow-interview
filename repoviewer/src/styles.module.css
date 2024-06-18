@@ -1,0 +1,134 @@
+:global(body) {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: royalblue solid 1px;
+    /* width: 100%; */
+    padding: 20px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    outline: red solid 1px;
+    width: 100%;
+}
+
+.header h1 {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.header svg {
+    fill: #000000;
+    width: 40px; 
+    height: 40px; 
+}
+
+
+.searchBar {
+    display: flex;
+   
+}
+
+.input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.repoList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+}
+
+.repoItem {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.repoItem a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.repoItem a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+.error {
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    .repoItem {
+        width: 90%;
+    }
+
+    .input, .button {
+        width: 90%;
+    }
+}
