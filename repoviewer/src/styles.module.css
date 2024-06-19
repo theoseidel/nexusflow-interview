@@ -1,8 +1,8 @@
 :global(body) {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color:white;
+    color:black;
 }
 
 .app {
@@ -30,11 +30,10 @@
 .header h1 {
     margin-right: 10px;
     font-size: 24px;
-    color: #000000;
+    color: black;
 }
 
 .header svg {
-    fill: #000000;
     width: 40px; 
     height: 40px; 
 }
@@ -47,7 +46,7 @@
 .input {
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 16px;
     width: 200px;
@@ -55,16 +54,16 @@
 
 .button {
     padding: 10px 20px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     cursor: pointer;
     font-size: 16px;
 }
 
 .button:hover {
-    background-color: #ffffff;
+    background-color: white;
     color: blue
 }
 
@@ -77,7 +76,7 @@
 }
 
 .repoItem {
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
@@ -89,9 +88,7 @@
     color: blue;
 }
 
-.repoItem a:hover {
-    text-decoration: underline;
-}
+
 
 .repoDetails {
     display: flex;
