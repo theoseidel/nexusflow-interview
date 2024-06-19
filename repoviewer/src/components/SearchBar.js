@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../styles.module.css';
 
-const SearchBar = ({ onSearch }) => {
-    const [inputValue, setInputValue] = useState('');
+const SearchBar = ({ onInputChange, onSearch }) => {
+    const handleChange = (e) => {
+        onInputChange(e.target.value);
+    };
 
-    const handleSearch = () => {
-        if (inputValue.trim()) {
-            onSearch(inputValue);
-        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSearch();
     };
 
     return (
-        <div className={styles.searchBar}>
+        <form onSubmit={handleSubmit} className={styles.searchBar}>
             <input
                 type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
+                onChange={handleChange}
                 placeholder="Enter GitHub username"
                 className={styles.input}
             />
-            <button onClick={handleSearch} className={styles.button}>Search</button>
-        </div>
+            <button type="submit" className={styles.button}>Search</button>
+        </form>
     );
 };
 

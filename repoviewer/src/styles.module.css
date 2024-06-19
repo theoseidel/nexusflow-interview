@@ -8,28 +8,23 @@
 .app {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 10px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    outline: royalblue solid 1px;
-    /* width: 100%; */
-    padding: 20px;
-
+    padding: 10px;
 }
 
 .header {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
-    flex-direction: column;
-    outline: red solid 1px;
+    padding: 10px;
     width: 100%;
+
 }
 
 .header h1 {
@@ -44,10 +39,9 @@
     height: 40px; 
 }
 
-
 .searchBar {
     display: flex;
-   
+    margin-bottom: 20px;
 }
 
 .input {
@@ -71,7 +65,7 @@
 
 .button:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: blue
 }
 
 .repoList {
@@ -85,19 +79,30 @@
 .repoItem {
     border: 1px solid #000000;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 0;
     width: 100%;
 }
 
 .repoItem a {
-    text-decoration: none;
-    color: #000000;
+    
+    color: blue;
 }
 
 .repoItem a:hover {
     text-decoration: underline;
 }
+
+.repoDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repoDetails p {
+    margin: 0;
+    padding-right: 10px;
+}
+
 
 .loading {
     margin: 20px;
@@ -121,6 +126,13 @@
 
 .error {
     margin: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.repoCount {
+    margin: 20px 0;
+    font-size: 18px;
 }
 
 @media (max-width: 600px) {

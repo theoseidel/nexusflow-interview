@@ -4,5 +4,7 @@ export const fetchRepos = async (username) => {
         throw new Error('User not found');
     }
     const data = await response.json();
-    return data.filter(repo => !repo.fork).sort((a, b) => b.stargazers_count - a.stargazers_count);
+    return data
+        .filter(repo => !repo.fork)
+        .sort((a, b) => b.stargazers_count - a.stargazers_count); 
 };
