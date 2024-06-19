@@ -24,7 +24,8 @@ const App = () => {
       }
   }, []);
 
-  const handleSearch = useCallback(async () => {
+  // TODO: handle debounce
+  const handleSearch = useCallback(async () => { 
       if (username.trim() === '') return;
 
       setLoading(true);

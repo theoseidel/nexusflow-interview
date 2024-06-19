@@ -1,10 +1,13 @@
 :global(body) {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
 }
 
+/* ---------------------------------
+   App Component
+   --------------------------------- */
 .app {
     display: flex;
     flex-direction: column;
@@ -12,19 +15,24 @@
     padding: 10px;
 }
 
+/* ---------------------------------
+   Main Component
+   --------------------------------- */
 .main {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+/* ---------------------------------
+   Header Component
+   --------------------------------- */
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     width: 100%;
-
 }
 
 .header h1 {
@@ -34,10 +42,13 @@
 }
 
 .header svg {
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
 }
 
+/* ---------------------------------
+   SearchBar Component
+   --------------------------------- */
 .searchBar {
     display: flex;
     margin-bottom: 20px;
@@ -64,9 +75,12 @@
 
 .button:hover {
     background-color: white;
-    color: blue
+    color: blue;
 }
 
+/* ---------------------------------
+   RepoList Component
+   --------------------------------- */
 .repoList {
     display: flex;
     flex-direction: column;
@@ -84,11 +98,8 @@
 }
 
 .repoItem a {
-    
     color: blue;
 }
-
-
 
 .repoDetails {
     display: flex;
@@ -100,7 +111,9 @@
     padding-right: 10px;
 }
 
-
+/* ---------------------------------
+   Loading Component
+   --------------------------------- */
 .loading {
     margin: 20px;
     display: flex;
@@ -108,6 +121,9 @@
     align-items: center;
 }
 
+/* ---------------------------------
+   Spinner Animation
+   --------------------------------- */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -121,8 +137,10 @@
     animation: spin 1s linear infinite;
 }
 
+/* ---------------------------------
+   Error and RepoCount Components
+   --------------------------------- */
 .error {
-    margin: 20px;
     margin: 20px 0;
     font-size: 18px;
 }
@@ -132,6 +150,9 @@
     font-size: 18px;
 }
 
+/* ---------------------------------
+   Media Queries
+   --------------------------------- */
 @media (max-width: 600px) {
     .repoItem {
         width: 90%;
